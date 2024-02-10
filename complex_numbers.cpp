@@ -49,12 +49,20 @@ public:
         return result;
     }
 
+    Complex_Number operator+(double _number) {
+        return *this + create_complex(_number);
+    }
+
     Complex_Number operator-(Complex_Number _complex) {
         Complex_Number result = *this - _complex;
 
         print_operation(*this, _complex, result, '-');
 
         return result;
+    }
+
+    Complex_Number operator-(double _number) {
+        return *this - create_complex(_number);
     }
 
     Complex_Number operator*(Complex_Number _complex) {
@@ -67,17 +75,57 @@ public:
         return result;
     }
 
-    // Minor utility functions
+    Complex_Number operator*(double number) {
+        return *this * create_complex(number);
+    }
+
+    Complex_Number operator/(Complex_Number _complex) {
+        Complex_Number result;
+        result.real_part = (real_part * _complex.real_part + im_part * _complex.im_part) / (_complex.real_part * _complex.real_part - _complex.im_part * _complex.im_part); 
+        result.im_part = (-1 * _complex.real_part * _complex.im_part + im_part * _complex.real_part) / ((_complex.real_part * _complex.real_part - _complex.im_part * _complex.im_part));
+
+        print_operation(*this, _complex, result, '/');
+
+        return result;
+    }
+
+    Complex_Number operator/(double number) {
+        return *this / create_complex(number);
+    }
+
+    Complex_Number operator^(double power) {
+        Complex_Number result;
+        result.real_part = pow((real_part * real_part + im_part * im_part), power / 2) * cos(power * atan(im_part / real_part));
+        result.im_part =  pow((real_part * real_part + im_part * im_part), power / 2) * sin(power * atan(im_part / real_part));
+        
+        print_power(*this, result, power);
+
+        return result;
+    }
+
+    // TODO: operator ==, !=
+
+    // Utility functions
+    Complex_Number create_complex(double number) {
+        return Complex_Number(number, 0);
+    }
+
     void print() {
-        cout << "(" << get_real << " + " << im_part << "i" << ")" << "\n";
+        cout << "(" << get_real << " + " << im_part << "i" << ")";
     }
 
     void print_operation(Complex_Number _complex1, Complex_Number _complex2, Complex_Number _result, char _operator) {
         _complex1.print();
-        cout << " " << _operator << " " << "\n";
+        cout << " " << _operator << " ";
         _complex2.print();
         cout << " = ";
         _result.print();
+    }
+
+    void print_power(Complex_Number _complex, Complex_Number result, double power) {
+        _complex.print();
+        cout << " ^ " << power << " = ";
+        result.print();
     }
 };
 
