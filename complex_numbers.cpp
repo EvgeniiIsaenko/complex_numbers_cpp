@@ -1,4 +1,5 @@
 #include <iostream>
+#define ACCURACY 0.001f
 using namespace std;
 
 class Complex_Number {
@@ -103,7 +104,23 @@ public:
         return result;
     }
 
-    // TODO: operator ==, !=
+    bool operator==(Complex_Number _complex) {
+        return ((abs(real_part - _complex.real_part) < ACCURACY) && (abs(im_part - _complex.im_part < ACCURACY)));
+    }
+
+    bool operator==(double number) {
+        return ((abs(real_part - number) < ACCURACY) && (abs(im_part < ACCURACY)));
+    }
+
+    bool operator!=(Complex_Number _complex) {
+        return !(*this == _complex);
+    }
+
+    bool operator!=(double number) {
+        return !(*this == number);
+    }
+
+    // TODO: operator 
 
     // Utility functions
     Complex_Number create_complex(double number) {
