@@ -81,6 +81,9 @@ public:
     }
 
     Complex_Number operator/(Complex_Number _complex) {
+        if (_complex.get_abs() == 0) {
+            throw "Division by zero!";
+        }
         Complex_Number result;
         result.real_part = (real_part * _complex.real_part + im_part * _complex.im_part) / (_complex.real_part * _complex.real_part - _complex.im_part * _complex.im_part); 
         result.im_part = (-1 * _complex.real_part * _complex.im_part + im_part * _complex.real_part) / ((_complex.real_part * _complex.real_part - _complex.im_part * _complex.im_part));
@@ -96,8 +99,8 @@ public:
 
     Complex_Number operator^(double power) {
         Complex_Number result;
-        result.real_part = pow((real_part * real_part + im_part * im_part), power / 2) * cos(power * atan(im_part / real_part));
-        result.im_part =  pow((real_part * real_part + im_part * im_part), power / 2) * sin(power * atan(im_part / real_part));
+        result.real_part = pow(get_abs(), power) * cos(power * atan(im_part / real_part));
+        result.im_part = pow(get_abs(), power) * sin(power * atan(im_part / real_part));
         
         print_power(*this, result, power);
 
@@ -120,8 +123,6 @@ public:
         return !(*this == number);
     }
 
-    // TODO: operator 
-
     // Utility functions
     Complex_Number create_complex(double number) {
         return Complex_Number(number, 0);
@@ -137,12 +138,18 @@ public:
         _complex2.print();
         cout << " = ";
         _result.print();
+        cout << "\n";
     }
 
     void print_power(Complex_Number _complex, Complex_Number result, double power) {
         _complex.print();
         cout << " ^ " << power << " = ";
         result.print();
+        cout << "\n";
+    }
+
+    double get_abs() {
+        return sqrt(real_part * real_part + im_part * im_part);
     }
 };
 
