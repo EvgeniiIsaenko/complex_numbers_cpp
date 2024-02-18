@@ -1,0 +1,5 @@
+if(EXISTS "/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/complex_numbers_tests[1]_tests.cmake")
+  include("/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/complex_numbers_tests[1]_tests.cmake")
+else()
+  add_test(complex_numbers_tests_NOT_BUILT complex_numbers_tests_NOT_BUILT)
+endif()

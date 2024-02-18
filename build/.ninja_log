@@ -1,0 +1,13 @@
+# ninja log v5
+1	780	1708259721164662722	CMakeFiles/complex_numbers_tests.dir/complex_numbers_tests.cc.o	88612ab4103b120
+3076	3113	1708256329177229834	lib/libgmock_main.a	e23c55bde57fcd87
+1	829	1708256326889290108	googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	40604d811bf3552f
+1	933	1708256326993287369	googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o	fdb0070eab56767a
+1	1830	1708256327889263766	googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o	903699aa56d8dbf9
+1	2973	1708256329021233945	googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	62a6b392687fcb28
+780	892	1708259721284660232	/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/complex_numbers_tests[1]_tests.cmake	67522807446e4e01
+2973	3033	1708256329097231942	lib/libgtest.a	aefb724294c46f5
+3033	3066	1708256329133230993	lib/libgtest_main.a	f13443dde7e458db
+780	892	1708259721284660232	complex_numbers_tests[1]_tests.cmake	67522807446e4e01
+3033	3076	1708256329141230783	lib/libgmock.a	75bfdc3854f90b4a
+780	892	1708259721284660232	complex_numbers_tests	67522807446e4e01
