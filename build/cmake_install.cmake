@@ -1,4 +1,4 @@
-# Install script for directory: /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests
+# Install script for directory: /home/evgenii/Desktop/Repositories/complex_numbers_cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,9 +43,8 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/cmake_install.cmake")
-
+  # Include the install script for the subdirectory.
+  include("/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

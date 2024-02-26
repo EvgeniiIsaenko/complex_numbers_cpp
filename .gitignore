@@ -31,4 +31,7 @@
 *.out
 *.app
 
+# Build and cache files
 .vscode
+build
+bin

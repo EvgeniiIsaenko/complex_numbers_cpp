@@ -31,7 +31,7 @@ void Complex_Number::set_im(double _im_part) {
 }
 
 double Complex_Number::get_im() {
-    cout << "Got imaginary part: " << real_part << "\n";
+    cout << "Got imaginary part: " << im_part << "\n";
 
     return im_part;
 }
@@ -151,7 +151,3 @@ double Complex_Number::get_abs() {
 }
 
 Complex_Number::~Complex_Number() {}
-
-int main() {
-
-}

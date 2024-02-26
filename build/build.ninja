@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: complex_numbers_tests
+# Project: main
 # Configurations: Debug
 # =============================================================================
 
@@ -40,213 +40,111 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/
-
-#############################################
-# Utility command for Experimental
-
-build Experimental: phony CMakeFiles/Experimental
-
-
-#############################################
-# Utility command for Nightly
-
-build Nightly: phony CMakeFiles/Nightly
-
-
-#############################################
-# Utility command for Continuous
-
-build Continuous: phony CMakeFiles/Continuous
-
-
-#############################################
-# Utility command for NightlyMemoryCheck
-
-build NightlyMemoryCheck: phony CMakeFiles/NightlyMemoryCheck
-
-
-#############################################
-# Utility command for NightlyStart
-
-build NightlyStart: phony CMakeFiles/NightlyStart
-
-
-#############################################
-# Utility command for NightlyUpdate
-
-build NightlyUpdate: phony CMakeFiles/NightlyUpdate
-
-
-#############################################
-# Utility command for NightlyConfigure
-
-build NightlyConfigure: phony CMakeFiles/NightlyConfigure
-
-
-#############################################
-# Utility command for NightlyBuild
-
-build NightlyBuild: phony CMakeFiles/NightlyBuild
-
-
-#############################################
-# Utility command for NightlyTest
-
-build NightlyTest: phony CMakeFiles/NightlyTest
-
-
-#############################################
-# Utility command for NightlyCoverage
-
-build NightlyCoverage: phony CMakeFiles/NightlyCoverage
-
-
-#############################################
-# Utility command for NightlyMemCheck
-
-build NightlyMemCheck: phony CMakeFiles/NightlyMemCheck
-
-
-#############################################
-# Utility command for NightlySubmit
-
-build NightlySubmit: phony CMakeFiles/NightlySubmit
-
-
-#############################################
-# Utility command for ExperimentalStart
-
-build ExperimentalStart: phony CMakeFiles/ExperimentalStart
-
-
-#############################################
-# Utility command for ExperimentalUpdate
-
-build ExperimentalUpdate: phony CMakeFiles/ExperimentalUpdate
-
-
-#############################################
-# Utility command for ExperimentalConfigure
-
-build ExperimentalConfigure: phony CMakeFiles/ExperimentalConfigure
-
-
-#############################################
-# Utility command for ExperimentalBuild
-
-build ExperimentalBuild: phony CMakeFiles/ExperimentalBuild
-
-
-#############################################
-# Utility command for ExperimentalTest
-
-build ExperimentalTest: phony CMakeFiles/ExperimentalTest
-
-
-#############################################
-# Utility command for ExperimentalCoverage
-
-build ExperimentalCoverage: phony CMakeFiles/ExperimentalCoverage
-
-
-#############################################
-# Utility command for ExperimentalMemCheck
-
-build ExperimentalMemCheck: phony CMakeFiles/ExperimentalMemCheck
-
-
-#############################################
-# Utility command for ExperimentalSubmit
-
-build ExperimentalSubmit: phony CMakeFiles/ExperimentalSubmit
-
-
-#############################################
-# Utility command for ContinuousStart
-
-build ContinuousStart: phony CMakeFiles/ContinuousStart
-
-
-#############################################
-# Utility command for ContinuousUpdate
-
-build ContinuousUpdate: phony CMakeFiles/ContinuousUpdate
-
-
-#############################################
-# Utility command for ContinuousConfigure
-
-build ContinuousConfigure: phony CMakeFiles/ContinuousConfigure
-
-
-#############################################
-# Utility command for ContinuousBuild
-
-build ContinuousBuild: phony CMakeFiles/ContinuousBuild
-
-
-#############################################
-# Utility command for ContinuousTest
-
-build ContinuousTest: phony CMakeFiles/ContinuousTest
-
-
-#############################################
-# Utility command for ContinuousCoverage
-
-build ContinuousCoverage: phony CMakeFiles/ContinuousCoverage
-
-
-#############################################
-# Utility command for ContinuousMemCheck
-
-build ContinuousMemCheck: phony CMakeFiles/ContinuousMemCheck
-
-
-#############################################
-# Utility command for ContinuousSubmit
-
-build ContinuousSubmit: phony CMakeFiles/ContinuousSubmit
-
-
-#############################################
-# Utility command for check
-
-build check: phony CMakeFiles/check complex_numbers_tests
-
 # =============================================================================
-# Object build statements for EXECUTABLE target complex_numbers_tests
+# Object build statements for STATIC_LIBRARY target COMPLEX
 
 
 #############################################
-# Order-only phony target for complex_numbers_tests
+# Order-only phony target for COMPLEX
 
-build cmake_object_order_depends_target_complex_numbers_tests: phony || cmake_object_order_depends_target_gtest
+build cmake_object_order_depends_target_COMPLEX: phony || CMakeFiles/COMPLEX.dir
 
-build CMakeFiles/complex_numbers_tests.dir/complex_numbers_tests.cc.o: CXX_COMPILER__complex_numbers_tests_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/complex_numbers_tests.cc || cmake_object_order_depends_target_complex_numbers_tests
-  DEP_FILE = CMakeFiles/complex_numbers_tests.dir/complex_numbers_tests.cc.o.d
+build CMakeFiles/COMPLEX.dir/complex_numbers/complex_numbers.cpp.o: CXX_COMPILER__COMPLEX_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers/complex_numbers.cpp || cmake_object_order_depends_target_COMPLEX
+  DEP_FILE = CMakeFiles/COMPLEX.dir/complex_numbers/complex_numbers.cpp.o.d
   FLAGS = -g
-  INCLUDES = -I/home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest
-  OBJECT_DIR = CMakeFiles/complex_numbers_tests.dir
-  OBJECT_FILE_DIR = CMakeFiles/complex_numbers_tests.dir
+  OBJECT_DIR = CMakeFiles/COMPLEX.dir
+  OBJECT_FILE_DIR = CMakeFiles/COMPLEX.dir/complex_numbers
+  TARGET_COMPILE_PDB = CMakeFiles/COMPLEX.dir/COMPLEX.pdb
+  TARGET_PDB = libCOMPLEX.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target complex_numbers_tests
+# Link build statements for STATIC_LIBRARY target COMPLEX
 
 
 #############################################
-# Link the executable complex_numbers_tests
+# Link the static library libCOMPLEX.a
 
-build complex_numbers_tests complex_numbers_tests[1]_tests.cmake | ${cmake_ninja_workdir}complex_numbers_tests[1]_tests.cmake: CXX_EXECUTABLE_LINKER__complex_numbers_tests_Debug CMakeFiles/complex_numbers_tests.dir/complex_numbers_tests.cc.o | lib/libgtest.a || lib/libgtest.a
+build libCOMPLEX.a: CXX_STATIC_LIBRARY_LINKER__COMPLEX_Debug CMakeFiles/COMPLEX.dir/complex_numbers/complex_numbers.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/COMPLEX.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/COMPLEX.dir/COMPLEX.pdb
+  TARGET_FILE = libCOMPLEX.a
+  TARGET_PDB = libCOMPLEX.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target main
+
+
+#############################################
+# Order-only phony target for main
+
+build cmake_object_order_depends_target_main: phony || cmake_object_order_depends_target_COMPLEX
+
+build CMakeFiles/main.dir/src/main.cpp.o: CXX_COMPILER__main_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/src/main.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/src/main.cpp.o.d
   FLAGS = -g
-  LINK_LIBRARIES = lib/libgtest.a
-  OBJECT_DIR = CMakeFiles/complex_numbers_tests.dir
-  POST_BUILD = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/cmake -D TEST_TARGET=complex_numbers_tests -D TEST_EXECUTABLE=/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/complex_numbers_tests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=complex_numbers_tests_TESTS -D CTEST_FILE=/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/complex_numbers_tests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.25/Modules/GoogleTestAddTests.cmake
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/main.dir/
+  TARGET_PDB = main.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target main
+
+
+#############################################
+# Link the executable main
+
+build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/src/main.cpp.o | libCOMPLEX.a || libCOMPLEX.a
+  FLAGS = -g
+  LINK_LIBRARIES = libCOMPLEX.a
+  OBJECT_DIR = CMakeFiles/main.dir
+  POST_BUILD = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/cmake -E make_directory /home/evgenii/Desktop/Repositories/complex_numbers_cpp/bin && /usr/bin/cmake -E copy /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/main /home/evgenii/Desktop/Repositories/complex_numbers_cpp/bin
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/main.dir/
+  TARGET_FILE = main
+  TARGET_PDB = main.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target COMPLEX_TESTS
+
+
+#############################################
+# Order-only phony target for COMPLEX_TESTS
+
+build cmake_object_order_depends_target_COMPLEX_TESTS: phony || cmake_object_order_depends_target_COMPLEX cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build CMakeFiles/COMPLEX_TESTS.dir/complex_numbers_tests/complex_numbers_tests.cpp.o: CXX_COMPILER__COMPLEX_TESTS_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/complex_numbers_tests.cpp || cmake_object_order_depends_target_COMPLEX_TESTS
+  DEP_FILE = CMakeFiles/COMPLEX_TESTS.dir/complex_numbers_tests/complex_numbers_tests.cpp.o.d
+  FLAGS = -g
+  INCLUDES = -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest
+  OBJECT_DIR = CMakeFiles/COMPLEX_TESTS.dir
+  OBJECT_FILE_DIR = CMakeFiles/COMPLEX_TESTS.dir/complex_numbers_tests
+  TARGET_COMPILE_PDB = CMakeFiles/COMPLEX_TESTS.dir/
+  TARGET_PDB = COMPLEX_TESTS.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target COMPLEX_TESTS
+
+
+#############################################
+# Link the executable COMPLEX_TESTS
+
+build COMPLEX_TESTS COMPLEX_TESTS[1]_tests.cmake | ${cmake_ninja_workdir}COMPLEX_TESTS[1]_tests.cmake: CXX_EXECUTABLE_LINKER__COMPLEX_TESTS_Debug CMakeFiles/COMPLEX_TESTS.dir/complex_numbers_tests/complex_numbers_tests.cpp.o | libCOMPLEX.a lib/libgtest_main.a lib/libgtest.a || lib/libgtest.a lib/libgtest_main.a libCOMPLEX.a
+  FLAGS = -g
+  LINK_LIBRARIES = libCOMPLEX.a  lib/libgtest_main.a  lib/libgtest.a
+  OBJECT_DIR = CMakeFiles/COMPLEX_TESTS.dir
+  POST_BUILD = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/cmake -D TEST_TARGET=COMPLEX_TESTS -D TEST_EXECUTABLE=/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/COMPLEX_TESTS -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=COMPLEX_TESTS_TESTS -D CTEST_FILE=/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/COMPLEX_TESTS[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_XML_OUTPUT_DIR= -P /usr/share/cmake-3.25/Modules/GoogleTestAddTests.cmake
   PRE_LINK = :
   RESTAT = 1
-  TARGET_FILE = complex_numbers_tests
-  TARGET_PDB = complex_numbers_tests.dbg
+  TARGET_COMPILE_PDB = CMakeFiles/COMPLEX_TESTS.dir/
+  TARGET_FILE = COMPLEX_TESTS
+  TARGET_PDB = COMPLEX_TESTS.pdb
 
 
 #############################################
@@ -276,7 +174,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/cmake --regenerate-during-build -S/home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests -B/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/cmake --regenerate-during-build -S/home/evgenii/Desktop/Repositories/complex_numbers_cpp -B/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -325,322 +223,91 @@ build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
 
 build install/strip: phony CMakeFiles/install/strip.util
 
-
-#############################################
-# Custom command for CMakeFiles/Experimental
-
-build CMakeFiles/Experimental | ${cmake_ninja_workdir}CMakeFiles/Experimental: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D Experimental
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/Nightly
-
-build CMakeFiles/Nightly | ${cmake_ninja_workdir}CMakeFiles/Nightly: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D Nightly
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/Continuous
-
-build CMakeFiles/Continuous | ${cmake_ninja_workdir}CMakeFiles/Continuous: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D Continuous
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/NightlyMemoryCheck
-
-build CMakeFiles/NightlyMemoryCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemoryCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D NightlyMemoryCheck
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/NightlyStart
-
-build CMakeFiles/NightlyStart | ${cmake_ninja_workdir}CMakeFiles/NightlyStart: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D NightlyStart
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/NightlyUpdate
-
-build CMakeFiles/NightlyUpdate | ${cmake_ninja_workdir}CMakeFiles/NightlyUpdate: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D NightlyUpdate
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/NightlyConfigure
-
-build CMakeFiles/NightlyConfigure | ${cmake_ninja_workdir}CMakeFiles/NightlyConfigure: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D NightlyConfigure
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/NightlyBuild
-
-build CMakeFiles/NightlyBuild | ${cmake_ninja_workdir}CMakeFiles/NightlyBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D NightlyBuild
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/NightlyTest
-
-build CMakeFiles/NightlyTest | ${cmake_ninja_workdir}CMakeFiles/NightlyTest: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D NightlyTest
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/NightlyCoverage
-
-build CMakeFiles/NightlyCoverage | ${cmake_ninja_workdir}CMakeFiles/NightlyCoverage: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D NightlyCoverage
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/NightlyMemCheck
-
-build CMakeFiles/NightlyMemCheck | ${cmake_ninja_workdir}CMakeFiles/NightlyMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D NightlyMemCheck
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/NightlySubmit
-
-build CMakeFiles/NightlySubmit | ${cmake_ninja_workdir}CMakeFiles/NightlySubmit: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D NightlySubmit
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalStart
-
-build CMakeFiles/ExperimentalStart | ${cmake_ninja_workdir}CMakeFiles/ExperimentalStart: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ExperimentalStart
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalUpdate
-
-build CMakeFiles/ExperimentalUpdate | ${cmake_ninja_workdir}CMakeFiles/ExperimentalUpdate: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ExperimentalUpdate
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalConfigure
-
-build CMakeFiles/ExperimentalConfigure | ${cmake_ninja_workdir}CMakeFiles/ExperimentalConfigure: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ExperimentalConfigure
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalBuild
-
-build CMakeFiles/ExperimentalBuild | ${cmake_ninja_workdir}CMakeFiles/ExperimentalBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ExperimentalBuild
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalTest
-
-build CMakeFiles/ExperimentalTest | ${cmake_ninja_workdir}CMakeFiles/ExperimentalTest: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ExperimentalTest
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalCoverage
-
-build CMakeFiles/ExperimentalCoverage | ${cmake_ninja_workdir}CMakeFiles/ExperimentalCoverage: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ExperimentalCoverage
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalMemCheck
-
-build CMakeFiles/ExperimentalMemCheck | ${cmake_ninja_workdir}CMakeFiles/ExperimentalMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ExperimentalMemCheck
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ExperimentalSubmit
-
-build CMakeFiles/ExperimentalSubmit | ${cmake_ninja_workdir}CMakeFiles/ExperimentalSubmit: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ExperimentalSubmit
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ContinuousStart
-
-build CMakeFiles/ContinuousStart | ${cmake_ninja_workdir}CMakeFiles/ContinuousStart: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ContinuousStart
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ContinuousUpdate
-
-build CMakeFiles/ContinuousUpdate | ${cmake_ninja_workdir}CMakeFiles/ContinuousUpdate: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ContinuousUpdate
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ContinuousConfigure
-
-build CMakeFiles/ContinuousConfigure | ${cmake_ninja_workdir}CMakeFiles/ContinuousConfigure: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ContinuousConfigure
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ContinuousBuild
-
-build CMakeFiles/ContinuousBuild | ${cmake_ninja_workdir}CMakeFiles/ContinuousBuild: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ContinuousBuild
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ContinuousTest
-
-build CMakeFiles/ContinuousTest | ${cmake_ninja_workdir}CMakeFiles/ContinuousTest: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ContinuousTest
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ContinuousCoverage
-
-build CMakeFiles/ContinuousCoverage | ${cmake_ninja_workdir}CMakeFiles/ContinuousCoverage: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ContinuousCoverage
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ContinuousMemCheck
-
-build CMakeFiles/ContinuousMemCheck | ${cmake_ninja_workdir}CMakeFiles/ContinuousMemCheck: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ContinuousMemCheck
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/ContinuousSubmit
-
-build CMakeFiles/ContinuousSubmit | ${cmake_ninja_workdir}CMakeFiles/ContinuousSubmit: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest -D ContinuousSubmit
-  pool = console
-
-
-#############################################
-# Custom command for CMakeFiles/check
-
-build CMakeFiles/check | ${cmake_ninja_workdir}CMakeFiles/check: CUSTOM_COMMAND complex_numbers_tests || complex_numbers_tests lib/libgtest.a
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build && /usr/bin/ctest
-
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/CMakeLists.txt
+# /home/evgenii/Desktop/Repositories/complex_numbers_cpp/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for test
 
-build googletest/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest && /usr/bin/ctest --force-new-ctest-process
+build _deps/googletest-build/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
 
-build googletest/test: phony googletest/CMakeFiles/test.util
+build _deps/googletest-build/test: phony _deps/googletest-build/CMakeFiles/test.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build _deps/googletest-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build googletest/edit_cache: phony googletest/CMakeFiles/edit_cache.util
+build _deps/googletest-build/edit_cache: phony _deps/googletest-build/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest && /usr/bin/cmake --regenerate-during-build -S/home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests -B/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build
+build _deps/googletest-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build && /usr/bin/cmake --regenerate-during-build -S/home/evgenii/Desktop/Repositories/complex_numbers_cpp -B/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build googletest/rebuild_cache: phony googletest/CMakeFiles/rebuild_cache.util
+build _deps/googletest-build/rebuild_cache: phony _deps/googletest-build/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build googletest/list_install_components: phony
+build _deps/googletest-build/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build googletest/CMakeFiles/install.util: CUSTOM_COMMAND googletest/all
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest && /usr/bin/cmake -P cmake_install.cmake
+build _deps/googletest-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
 
-build googletest/install: phony googletest/CMakeFiles/install.util
+build _deps/googletest-build/install: phony _deps/googletest-build/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest/all
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+build _deps/googletest-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build googletest/install/local: phony googletest/CMakeFiles/install/local.util
+build _deps/googletest-build/install/local: phony _deps/googletest-build/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest/all
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+build _deps/googletest-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/all
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build googletest/install/strip: phony googletest/CMakeFiles/install/strip.util
+build _deps/googletest-build/install/strip: phony _deps/googletest-build/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/CMakeLists.txt
+# /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -652,12 +319,14 @@ build googletest/install/strip: phony googletest/CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_gmock: phony || cmake_object_order_depends_target_gtest
 
-build googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
-  DEP_FILE = googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
-  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
-  INCLUDES = -I/home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/include -I/home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest
-  OBJECT_DIR = googletest/googlemock/CMakeFiles/gmock.dir
-  OBJECT_FILE_DIR = googletest/googlemock/CMakeFiles/gmock.dir/src
+build _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILER__gmock_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googlemock/src/gmock-all.cc || cmake_object_order_depends_target_gmock
+  DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls
+  INCLUDES = -I/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googlemock/include -I/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googlemock -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src
+  TARGET_COMPILE_PDB = lib/libgmockpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgmockpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -667,13 +336,14 @@ build googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: CXX_COMPILE
 #############################################
 # Link the static library lib/libgmock.a
 
-build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug googletest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtest.a
+build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o || lib/libgtest.a
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = googletest/googlemock/CMakeFiles/gmock.dir
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lib/libgmockpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgmock.a
-  TARGET_PDB = gmock.a.dbg
+  TARGET_PDB = bin/libgmockpdb_debug_postfix-NOTFOUND.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gmock_main
@@ -684,12 +354,14 @@ build lib/libgmock.a: CXX_STATIC_LIBRARY_LINKER__gmock_Debug googletest/googlemo
 
 build cmake_object_order_depends_target_gmock_main: phony || cmake_object_order_depends_target_gmock cmake_object_order_depends_target_gtest
 
-build googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
-  DEP_FILE = googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
-  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
-  INCLUDES = -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest
-  OBJECT_DIR = googletest/googlemock/CMakeFiles/gmock_main.dir
-  OBJECT_FILE_DIR = googletest/googlemock/CMakeFiles/gmock_main.dir/src
+build _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_COMPILER__gmock_main_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googlemock/src/gmock_main.cc || cmake_object_order_depends_target_gmock_main
+  DEP_FILE = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls
+  INCLUDES = -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googlemock/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googlemock -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src
+  TARGET_COMPILE_PDB = lib/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -699,94 +371,95 @@ build googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o: CXX_C
 #############################################
 # Link the static library lib/libgmock_main.a
 
-build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug googletest/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmock.a lib/libgtest.a
+build lib/libgmock_main.a: CXX_STATIC_LIBRARY_LINKER__gmock_main_Debug _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o || lib/libgmock.a lib/libgtest.a
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = googletest/googlemock/CMakeFiles/gmock_main.dir
+  OBJECT_DIR = _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lib/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgmock_main.a
-  TARGET_PDB = gmock_main.a.dbg
+  TARGET_PDB = bin/libgmock_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 #############################################
 # Utility command for test
 
-build googletest/googlemock/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googlemock && /usr/bin/ctest --force-new-ctest-process
+build _deps/googletest-build/googlemock/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googlemock && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
 
-build googletest/googlemock/test: phony googletest/googlemock/CMakeFiles/test.util
+build _deps/googletest-build/googlemock/test: phony _deps/googletest-build/googlemock/CMakeFiles/test.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build googletest/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googlemock && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googlemock && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build googletest/googlemock/edit_cache: phony googletest/googlemock/CMakeFiles/edit_cache.util
+build _deps/googletest-build/googlemock/edit_cache: phony _deps/googletest-build/googlemock/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build googletest/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googlemock && /usr/bin/cmake --regenerate-during-build -S/home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests -B/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build
+build _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googlemock && /usr/bin/cmake --regenerate-during-build -S/home/evgenii/Desktop/Repositories/complex_numbers_cpp -B/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build googletest/googlemock/rebuild_cache: phony googletest/googlemock/CMakeFiles/rebuild_cache.util
+build _deps/googletest-build/googlemock/rebuild_cache: phony _deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build googletest/googlemock/list_install_components: phony
+build _deps/googletest-build/googlemock/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build googletest/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND googletest/googlemock/all
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googlemock && /usr/bin/cmake -P cmake_install.cmake
+build _deps/googletest-build/googlemock/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googlemock && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
 
-build googletest/googlemock/install: phony googletest/googlemock/CMakeFiles/install.util
+build _deps/googletest-build/googlemock/install: phony _deps/googletest-build/googlemock/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build googletest/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest/googlemock/all
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googlemock && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+build _deps/googletest-build/googlemock/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googlemock && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build googletest/googlemock/install/local: phony googletest/googlemock/CMakeFiles/install/local.util
+build _deps/googletest-build/googlemock/install/local: phony _deps/googletest-build/googlemock/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build googletest/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest/googlemock/all
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googlemock && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+build _deps/googletest-build/googlemock/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googlemock/all
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googlemock && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build googletest/googlemock/install/strip: phony googletest/googlemock/CMakeFiles/install/strip.util
+build _deps/googletest-build/googlemock/install/strip: phony _deps/googletest-build/googlemock/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/CMakeLists.txt
+# /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googlemock/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -796,14 +469,16 @@ build googletest/googlemock/install/strip: phony googletest/googlemock/CMakeFile
 #############################################
 # Order-only phony target for gtest
 
-build cmake_object_order_depends_target_gtest: phony || googletest/googletest/CMakeFiles/gtest.dir
+build cmake_object_order_depends_target_gtest: phony || _deps/googletest-build/googletest/CMakeFiles/gtest.dir
 
-build googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
-  DEP_FILE = googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
-  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
-  INCLUDES = -I/home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/include -I/home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest
-  OBJECT_DIR = googletest/googletest/CMakeFiles/gtest.dir
-  OBJECT_FILE_DIR = googletest/googletest/CMakeFiles/gtest.dir/src
+build _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls
+  INCLUDES = -I/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest/include -I/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src
+  TARGET_COMPILE_PDB = lib/libgtestpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgtestpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -813,13 +488,14 @@ build googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILE
 #############################################
 # Link the static library lib/libgtest.a
 
-build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug googletest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug _deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = googletest/googletest/CMakeFiles/gtest.dir
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lib/libgtestpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgtest.a
-  TARGET_PDB = gtest.a.dbg
+  TARGET_PDB = bin/libgtestpdb_debug_postfix-NOTFOUND.pdb
 
 # =============================================================================
 # Object build statements for STATIC_LIBRARY target gtest_main
@@ -830,12 +506,14 @@ build lib/libgtest.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug googletest/googlete
 
 build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
 
-build googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
-  DEP_FILE = googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
-  FLAGS = -g -Wall -Wshadow -Wconversion -Wundef -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Winline -Wredundant-decls -Wchar-subscripts
-  INCLUDES = -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest
-  OBJECT_DIR = googletest/googletest/CMakeFiles/gtest_main.dir
-  OBJECT_FILE_DIR = googletest/googletest/CMakeFiles/gtest_main.dir/src
+build _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_Debug /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
+  FLAGS = -g -Wall -Wshadow -Wconversion -DGTEST_HAS_PTHREAD=1 -fexceptions -W -Wpointer-arith -Wreturn-type -Wcast-qual -Wwrite-strings -Wswitch -Wunused-parameter -Wcast-align -Wchar-subscripts -Winline -Wredundant-decls
+  INCLUDES = -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest/include -isystem /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-src/googletest
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+  OBJECT_FILE_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src
+  TARGET_COMPILE_PDB = lib/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
+  TARGET_PDB = bin/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 # =============================================================================
@@ -845,93 +523,96 @@ build googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_C
 #############################################
 # Link the static library lib/libgtest_main.a
 
-build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtest.a
+build lib/libgtest_main.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || lib/libgtest.a
   LANGUAGE_COMPILE_FLAGS = -g
-  OBJECT_DIR = googletest/googletest/CMakeFiles/gtest_main.dir
+  OBJECT_DIR = _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = lib/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
   TARGET_FILE = lib/libgtest_main.a
-  TARGET_PDB = gtest_main.a.dbg
+  TARGET_PDB = bin/libgtest_mainpdb_debug_postfix-NOTFOUND.pdb
 
 
 #############################################
 # Utility command for test
 
-build googletest/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googletest && /usr/bin/ctest --force-new-ctest-process
+build _deps/googletest-build/googletest/CMakeFiles/test.util: CUSTOM_COMMAND
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googletest && /usr/bin/ctest --force-new-ctest-process
   DESC = Running tests...
   pool = console
   restat = 1
 
-build googletest/googletest/test: phony googletest/googletest/CMakeFiles/test.util
+build _deps/googletest-build/googletest/test: phony _deps/googletest-build/googletest/CMakeFiles/test.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build googletest/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googletest && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+build _deps/googletest-build/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googletest && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
-build googletest/googletest/edit_cache: phony googletest/googletest/CMakeFiles/edit_cache.util
+build _deps/googletest-build/googletest/edit_cache: phony _deps/googletest-build/googletest/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build googletest/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googletest && /usr/bin/cmake --regenerate-during-build -S/home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests -B/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build
+build _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googletest && /usr/bin/cmake --regenerate-during-build -S/home/evgenii/Desktop/Repositories/complex_numbers_cpp -B/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build googletest/googletest/rebuild_cache: phony googletest/googletest/CMakeFiles/rebuild_cache.util
+build _deps/googletest-build/googletest/rebuild_cache: phony _deps/googletest-build/googletest/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build googletest/googletest/list_install_components: phony
+build _deps/googletest-build/googletest/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build googletest/googletest/CMakeFiles/install.util: CUSTOM_COMMAND googletest/googletest/all
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googletest && /usr/bin/cmake -P cmake_install.cmake
+build _deps/googletest-build/googletest/CMakeFiles/install.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googletest && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
 
-build googletest/googletest/install: phony googletest/googletest/CMakeFiles/install.util
+build _deps/googletest-build/googletest/install: phony _deps/googletest-build/googletest/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build googletest/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND googletest/googletest/all
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googletest && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+build _deps/googletest-build/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googletest && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build googletest/googletest/install/local: phony googletest/googletest/CMakeFiles/install/local.util
+build _deps/googletest-build/googletest/install/local: phony _deps/googletest-build/googletest/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build googletest/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND googletest/googletest/all
-  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googletest && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+build _deps/googletest-build/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/googletest-build/googletest/all
+  COMMAND = cd /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googletest && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build googletest/googletest/install/strip: phony googletest/googletest/CMakeFiles/install/strip.util
+build _deps/googletest-build/googletest/install/strip: phony _deps/googletest-build/googletest/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Target aliases.
+
+build COMPLEX: phony libCOMPLEX.a
 
 build gmock: phony lib/libgmock.a
 
@@ -957,28 +638,28 @@ build libgtest_main.a: phony lib/libgtest_main.a
 #############################################
 # Folder: /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build
 
-build all: phony complex_numbers_tests googletest/all
+build all: phony libCOMPLEX.a main COMPLEX_TESTS _deps/googletest-build/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest
+# Folder: /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build
 
-build googletest/all: phony googletest/googlemock/all
-
-# =============================================================================
-
-#############################################
-# Folder: /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googlemock
-
-build googletest/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a googletest/googletest/all
+build _deps/googletest-build/all: phony _deps/googletest-build/googlemock/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/googletest/googletest
+# Folder: /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googlemock
 
-build googletest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
+build _deps/googletest-build/googlemock/all: phony lib/libgmock.a lib/libgmock_main.a _deps/googletest-build/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/_deps/googletest-build/googletest
+
+build _deps/googletest-build/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 
 # =============================================================================
 # Built-in targets
@@ -987,14 +668,14 @@ build googletest/googletest/all: phony lib/libgtest.a lib/libgtest_main.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/CMakeLists.txt /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/CMakeLists.txt /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/CMakeLists.txt /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/cmake/gmock.pc.in /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/cmake/gmock_main.pc.in /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/CMakeLists.txt /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/cmake/Config.cmake.in /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/cmake/gtest.pc.in /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/cmake/gtest_main.pc.in /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/cmake/internal_utils.cmake /usr/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/CTest.cmake /usr/share/cmake-3.25/Modules/CTestTargets.cmake /usr/share/cmake-3.25/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.25/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.25/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/FindThreads.cmake /usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.25/Modules/GoogleTest.cmake /usr/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/evgenii/Desktop/Repositories/complex_numbers_cpp/CMakeLists.txt /usr/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.25/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.25/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.25/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.25/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.25/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.25/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.25/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.25/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.25/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang.cmake /usr/share/cmake-3.25/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.25/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.25/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/FindPython.cmake /usr/share/cmake-3.25/Modules/FindPython/Support.cmake /usr/share/cmake-3.25/Modules/FindThreads.cmake /usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.25/Modules/GoogleTest.cmake /usr/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/CMakeLists.txt /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/CMakeLists.txt /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/CMakeLists.txt /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/cmake/gmock.pc.in /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googlemock/cmake/gmock_main.pc.in /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/CMakeLists.txt /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/cmake/Config.cmake.in /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/cmake/gtest.pc.in /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/cmake/gtest_main.pc.in /home/evgenii/Desktop/Repositories/complex_numbers_cpp/complex_numbers_tests/googletest/googletest/cmake/internal_utils.cmake /usr/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/CTest.cmake /usr/share/cmake-3.25/Modules/CTestTargets.cmake /usr/share/cmake-3.25/Modules/CTestUseLaunchers.cmake /usr/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.25/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.25/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/DartConfiguration.tcl.in /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/FindThreads.cmake /usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.25/Modules/GoogleTest.cmake /usr/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake: phony
+build /home/evgenii/Desktop/Repositories/complex_numbers_cpp/CMakeLists.txt /usr/share/cmake-3.25/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in /usr/share/cmake-3.25/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.25/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.25/Modules/CMakeCInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.25/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.25/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.25/Modules/CMakeDependentOption.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.25/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.25/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.25/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.25/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.25/Modules/CMakePackageConfigHelpers.cmake /usr/share/cmake-3.25/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.25/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.25/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.25/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.25/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.25/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.25/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.25/Modules/CheckCSourceCompiles.cmake /usr/share/cmake-3.25/Modules/CheckIncludeFile.cmake /usr/share/cmake-3.25/Modules/CheckLibraryExists.cmake /usr/share/cmake-3.25/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-C.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake-3.25/Modules/Compiler/Clang.cmake /usr/share/cmake-3.25/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/GNU.cmake /usr/share/cmake-3.25/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.25/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.25/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.25/Modules/FetchContent.cmake /usr/share/cmake-3.25/Modules/FetchContent/CMakeLists.cmake.in /usr/share/cmake-3.25/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.25/Modules/FindPackageMessage.cmake /usr/share/cmake-3.25/Modules/FindPython.cmake /usr/share/cmake-3.25/Modules/FindPython/Support.cmake /usr/share/cmake-3.25/Modules/FindThreads.cmake /usr/share/cmake-3.25/Modules/GNUInstallDirs.cmake /usr/share/cmake-3.25/Modules/GoogleTest.cmake /usr/share/cmake-3.25/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-3.25/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.25/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.25/Modules/Platform/Linux.cmake /usr/share/cmake-3.25/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.25/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.25.1/CMakeCCompiler.cmake CMakeFiles/3.25.1/CMakeCXXCompiler.cmake CMakeFiles/3.25.1/CMakeSystem.cmake _deps/googletest-src/CMakeLists.txt _deps/googletest-src/googlemock/CMakeLists.txt _deps/googletest-src/googlemock/cmake/gmock.pc.in _deps/googletest-src/googlemock/cmake/gmock_main.pc.in _deps/googletest-src/googletest/CMakeLists.txt _deps/googletest-src/googletest/cmake/Config.cmake.in _deps/googletest-src/googletest/cmake/gtest.pc.in _deps/googletest-src/googletest/cmake/gtest_main.pc.in _deps/googletest-src/googletest/cmake/internal_utils.cmake: phony
 
 
 #############################################
