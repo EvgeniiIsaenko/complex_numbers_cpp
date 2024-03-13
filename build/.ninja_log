@@ -1,0 +1,17 @@
+# ninja log v5
+1	26	1708947844396486434	CMakeFiles/main.dir/src/main.cpp.o	a0c115f752115612
+1	438	1708947844804480131	CMakeFiles/COMPLEX.dir/complex_numbers/complex_numbers.cpp.o	65d56f68e952c638
+439	476	1708947844848479453	libCOMPLEX.a	4e1a0b5961719a64
+476	559	1708947844912478463	main	b1ad616220f08518
+2	777	1708947845144474880	_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	6729e4d0729895c7
+1	898	1708947845264473026	CMakeFiles/COMPLEX_TESTS.dir/complex_numbers_tests/complex_numbers_tests.cpp.o	fb45bad0d32fa3e
+2	1140	1708947845508469256	_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o	64b3c5c3725b98aa
+2	1624	1708947845988461838	_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o	9a8212fe4796e3a6
+2	2689	1708947847044445519	_deps/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	c2b610413de2643a
+2689	2748	1708947847120444345	lib/libgtest.a	e21429778cf18d0f
+2748	2784	1708947847156443787	lib/libgtest_main.a	30ececf4ed42069a
+2748	2794	1708947847164443665	lib/libgmock.a	aed9b9110c6e7301
+2794	2829	1708947847200443107	lib/libgmock_main.a	685aef476c43eaae
+2784	2901	1708947847272441995	COMPLEX_TESTS	ddd13191b771b4b9
+2784	2901	1708947847272441995	COMPLEX_TESTS[1]_tests.cmake	ddd13191b771b4b9
+2784	2901	1708947847272441995	/home/evgenii/Desktop/Repositories/complex_numbers_cpp/build/COMPLEX_TESTS[1]_tests.cmake	ddd13191b771b4b9
