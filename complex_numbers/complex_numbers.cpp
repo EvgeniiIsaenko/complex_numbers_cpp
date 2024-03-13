@@ -52,7 +52,7 @@ Complex_Number Complex_Number::operator+(double _number) {
 }
 
 Complex_Number Complex_Number::operator-(Complex_Number _complex) {
-    Complex_Number result = *this - _complex;
+    Complex_Number result = *this + Complex_Number(-1 * _complex.real_part, -1 * _complex.im_part);
 
     print_operation(*this, _complex, result, '-');
 
@@ -83,8 +83,8 @@ Complex_Number Complex_Number::operator/(Complex_Number _complex) {
     }
 
     Complex_Number result;
-    result.real_part = (real_part * _complex.real_part + im_part * _complex.im_part) / (_complex.real_part * _complex.real_part - _complex.im_part * _complex.im_part); 
-    result.im_part = (-1 * _complex.real_part * _complex.im_part + im_part * _complex.real_part) / ((_complex.real_part * _complex.real_part - _complex.im_part * _complex.im_part));
+    result.real_part = (real_part * _complex.real_part + im_part * _complex.im_part) / (_complex.real_part * _complex.real_part + _complex.im_part * _complex.im_part); 
+    result.im_part = (-1 * real_part * _complex.im_part + im_part * _complex.real_part) / ((_complex.real_part * _complex.real_part + _complex.im_part * _complex.im_part));
 
     print_operation(*this, _complex, result, '/');
 

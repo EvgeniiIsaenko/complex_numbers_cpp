@@ -72,7 +72,7 @@ TEST(complex, multiplication_op) {
     Complex_Number c2 = Complex_Number(3, -2);
     Complex_Number result = c1 * c2;
     EXPECT_EQ(result.get_real(), 13);
-    EXPECT_EQ(result.get_im(), -17);
+    EXPECT_EQ(result.get_im(), 13);
 }
 
 TEST(complex, multiplication_num_op) {
@@ -86,15 +86,15 @@ TEST(complex, division_op) {
     Complex_Number c1 = Complex_Number(1, 5);
     Complex_Number c2 = Complex_Number(3, -2);
     Complex_Number result = c1 / c2;
-    EXPECT_DOUBLE_EQ(result.get_real(), -7 / 13);
-    EXPECT_DOUBLE_EQ(result.get_im(), 17 / 13);
+    EXPECT_TRUE(result.get_real() == -7.0 / 13.0);
+    EXPECT_TRUE(result.get_im() == 17.0 / 13.0);
 }
 
 TEST(complex, division_num_op) {
     Complex_Number c1 = Complex_Number(1, 5);
     Complex_Number result = c1 / 4;
-    EXPECT_DOUBLE_EQ(result.get_real(), 1 / 4);
-    EXPECT_DOUBLE_EQ(result.get_im(), 5 / 4);
+    EXPECT_TRUE(result.get_real() == 1.0 / 4.0);
+    EXPECT_TRUE(result.get_im() == 5.0 / 4.0);
 }
 
 TEST(complex, pow_op) {
@@ -103,5 +103,3 @@ TEST(complex, pow_op) {
     EXPECT_DOUBLE_EQ(result.get_real(), -74);
     EXPECT_DOUBLE_EQ(result.get_im(), -110);
 }
-
-
